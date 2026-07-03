@@ -1,0 +1,78 @@
+name: smart_utility_toolkit
+description: A comprehensive utility app with calculator, converters, QR code tools, notes, and more.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.4.0
+  
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # QR Code
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^3.5.6
+  
+  # Sensors
+  sensors_plus: ^2.1.0
+  tflite_flutter: ^0.10.2
+  
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.0.0
+  permission_handler: ^11.4.4
+  
+  # UI
+  google_fonts: ^6.1.0
+  cached_network_image: ^3.3.1
+  loading_animation_widget: ^1.2.0
+  
+  # AdMob
+  google_mobile_ads: ^6.0.0
+  
+  # Device Features
+  fluttertoast: ^8.2.2
+  vibration: ^1.9.0
+  torch_light: ^0.9.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.7
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
